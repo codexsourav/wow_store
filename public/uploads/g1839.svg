@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.824" height="26.824" viewBox="0 0 26.824 26.824">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path1845" d="M0-682.665H26.824v26.824H0Z" transform="translate(0 682.665)" fill="#886f59" stroke="#886f59" stroke-width="1.333"/>
+    </clipPath>
+  </defs>
+  <g id="g1839" transform="translate(0 0)">
+    <g id="g1841">
+      <g id="g1843" clip-path="url(#clip-path)">
+        <g id="g1849" transform="translate(7.335 1.048)">
+          <path id="path1851" d="M-297.178-256.188v-4.4a6.077,6.077,0,0,0-6.077-6.077,6.077,6.077,0,0,0-6.077,6.077v4.4" transform="translate(309.333 266.666)" fill="rgba(0,0,0,0)" stroke="#886f59" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="g1853" transform="translate(19.489 23.681)">
+          <path id="path1855" d="M0,0H4.191" fill="rgba(0,0,0,0)" stroke="#886f59" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="g1857" transform="translate(21.585 21.585)">
+          <path id="path1859" d="M0,0V4.191" fill="rgba(0,0,0,0)" stroke="#886f59" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+        <g id="g1861" transform="translate(3.143 7.335)">
+          <path id="path1863" d="M-502.128-245.94V-256h-20.537v18.442h12.155" transform="translate(522.665 255.999)" fill="rgba(0,0,0,0)" stroke="#886f59" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
