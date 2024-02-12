@@ -1,0 +1,41 @@
+.button {
+  border: none;
+  background-color: #e5ba73;
+  /*max-width: 100%;*/
+  min-width:250px;
+  height: 42px;
+  color:#fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 2px;
+  transition: background-color 0.4s;
+  display:table;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.button:hover {
+  background-color: var(--primary_light);
+  color: var(--primary_light_contrast);
+}
+
+.button div {
+  position: relative;
+  transition: all 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.svg {
+  animation: spin infinite 2.2s linear;
+  margin-left: 5px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

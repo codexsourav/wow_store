@@ -1,0 +1,164 @@
+import {
+  BoxArrowInRight,
+  GeoAlt,
+  Heart,
+  Person,
+  PersonPlus,
+  Repeat,
+  Telephone,
+} from "@styled-icons/bootstrap";
+import { signOut } from "next-auth/react";
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { memo, useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
+import ImageLoader from "~/components/Image";
+import SearchBar from "~/components/Layout/Client/searchbar";
+import Image from 'next/image'
+
+
+const CartView = dynamic(() => import("./cartView"), { ssr: false });
+const CategoryMenu = dynamic(() => import("./categoryMenu"), { ssr: false });
+
+const NavBar = () => {
+  const [hideTopBar, setHideTopBar] = useState(false);
+  // Selecting session from global state
+  const { session } = useSelector((state) => state.localSession);
+  // Selecting settings from global state
+  const { settingsData } = useSelector((state) => state.settings);
+  const { wishlist, compare } = useSelector((state) => state.cart);
+  const [std, setStd] = useState(settingsData);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    setStd(settingsData);
+  }, [settingsData]);
+
+  const router = useRouter();
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    if (position > 110) {
+      setHideTopBar(true);
+    } else {
+      setHideTopBar(false);
+    }
+  };
+
+  const goToWishList = () => {
+    if (session) {
+      router.push("/profile?tab=1");
+    } else {
+      toast.warning("You need to login to create a Wishlist");
+    }
+  };
+
+  const navItem = [
+    {
+      id: 1,
+      name: "Home",
+      to: "/",
+    },
+    {
+      id: 2,
+      name: "Shop",
+      to: "/gallery",
+    },
+    {
+      id: 3,
+      name: "All Categories",
+      to: "/categories",
+    },
+    {
+      id: 4,
+      name: "Faq",
+      to: "/faq",
+    },
+    {
+      id: 5,
+      name: "About",
+      to: "/about",
+    },
+  ];
+
+  return (
+    <>
+    
+    
+<header>
+ 
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2 d-flex align-items-center icon-nav">
+        <button className="menu-button"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Open Menu</button>
+   
+      </div>
+      <div className="col-lg-2 col-md-2 col-sm-2 col-3">
+        <div className="logo">
+       <Link href="">
+          <Image src="/images/logo.png" width={130}    height={70} />
+         </Link>
+        </div>
+      </div>
+      <div className="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-7">
+        <div className="top-nav">
+          <ul>
+            <li className="mob-hide">
+              <Link href="">NEW ARRIVALS</Link>
+            </li>
+            <li className="mob-hide">
+              <Link href="">COLLECTIONS</Link>
+            </li>
+            <li>
+            
+<span className="searchBox"><input className="expand-box" type="text" /></span>
+
+
+
+            </li>
+            <li className="dropdown">
+         
+             
+             
+                 {!session && (
+                  <Link href="/signin">
+                     <Image src="/images/user.png"  width={27}    height={27} />
+                  </Link>
+                )}
+                {session && (
+                
+                
+                <CategoryMenu />
+                  
+                )}
+            </li>
+         
+          
+              <CartView />
+           
+         
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  
+  
+  
+  
+
+      
+    </>
+  );
+};
+
+export default memo(NavBar);

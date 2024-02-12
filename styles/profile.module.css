@@ -1,0 +1,108 @@
+.menu {
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 1px 2px 0 #0000001c;
+}
+
+.user_info {
+  text-align: center;
+  padding: 25px 8px;
+  background-color: var(--primary);
+  color: var(--primary_contrast);
+  overflow: hidden;
+}
+
+.menu_list {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.menu_item {
+  font-size: 16px;
+}
+
+.menu_item button {
+  border: none;
+  background-color: #fff;
+  padding: 6px;
+  display: block;
+  width: 100%;
+  transition: background-color 0.4s;
+  text-align:left;
+}
+
+.menu_item button:hover,
+.menu_item button.active {
+  background-color:#e5ba73;
+  color: var(--primary_contrast);
+}
+
+.viewer {
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    /*font-family: "Raleway", sans-serif;*/
+}
+.viewer header{
+    border:none;
+}
+.userProfile{
+    background: #886f5f;
+    display: flex;
+    color: #fff;
+    padding-bottom: 42px;
+ 
+}
+.userProfile h4{
+    margin-top:40px;
+}
+.profilePhoto{
+    background: #fff7f0;
+    height: 112px;
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5ba73;
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    top: 140px;
+    box-shadow: 1px 1px 2px #886f5f;
+    font-size: 95px;
+}
+
+.userProfileForm form .form-control{
+    color:777;
+}
+.userProfileForm form .form-label {
+    margin-bottom: 1rem;
+    font-size: 17px;
+    color: #241a13;
+}
+.card_header{
+    font-size: 20px;
+    color: #fff;
+    padding: 15px;
+    border-bottom: solid 1px #ccc;
+    background: #886f5f;
+}
+@media (max-width: 600px) {
+  .viewer {
+    min-height: 85vh;
+    height: 100%;
+    padding: 25px 0px;
+  }
+  .profilePhoto{
+      font-size:50px;
+      top: 120px;
+      width:78px;
+      height:78px;
+  }
+  .viewer header{
+      padding-right:0;
+      padding-left:0;
+  }
+}

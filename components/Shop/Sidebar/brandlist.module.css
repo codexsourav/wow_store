@@ -1,0 +1,47 @@
+.brand_item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    display: block;
+    text-transform:lowercase;
+
+}
+.brand_item:first-letter{
+    text-transform:uppercase;
+}
+
+.brand_item * {
+  transition: 0.4s all;
+}
+
+.brand_item:hover {
+  color:#886f59;
+}
+
+.brand_item::before {
+  position: absolute;
+    top: 2.1px;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #c1cdd7 solid 1px;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 0;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnIHZpZXdCb3g9JzAgMCA4IDgnPjxwYXRoIGZpbGw9JyNmZmYnIGQ9J002LjU2NC43NWwtMy41OSAzLjYxMi0xLjUzOC0xLjU1TDAgNC4yNmwyLjk3NCAyLjk5TDggMi4xOTN6Jy8+PC9zdmc+);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.brand_item_selected::before {
+  background-color: #e5ba73;
+      border: solid 1px #e5ba73;
+}

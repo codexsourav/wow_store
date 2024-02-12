@@ -1,0 +1,1318 @@
+@media screen and (max-width: 1399px){
+    section.hotproduct, 
+    section.walk-into-store, 
+    section.art-bot, 
+    section.walk-into-store, 
+    section.client-satisfied, 
+    section.client-logo, 
+    section.who-we-glave,
+    section.similarProduct,
+    .productInfo,
+    .eros-mesh{
+    margin-top:0px;
+   top:0;
+   position:relative;
+   padding:40px 0;
+ }
+ section.similarProduct h2{
+    padding-bottom:20px;
+ }
+ .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+    top:50%;
+ }
+
+.happy-valentines{right: 46% !important;}
+     section.banner {
+        height:450px;
+        /*background: #f0d8b0;*/
+    }
+
+    section.banner .img-bg{
+        background: none;
+        border-radius: 0;
+        top: -7.5rem;
+        right: 19px;
+    }
+     section.banner .img-bg img{
+           height: 280px;
+           width:auto;
+    }
+    .banner .viewallbtn a img{
+        width:23px!important;
+        height: auto;
+        margin-top:0;
+    }
+    .Watchbanner, .Watchbanner .container-fluid, .Watchbanner .row, .Watchbanner .col-lg-4, .Watchbanner .banner-content {
+            /*height: 84%;*/
+    }
+    .banner-content{
+            top:15%;
+    }
+    .product-description,
+       .product-description .watchCategory{
+        padding-left:0;
+    }
+    .
+    .best-seller{
+        font-size: 20px;
+    }
+    .watchCategory{
+
+    }
+    .blackHeading{
+
+    }
+    .best-seller{
+        padding-bottom:10px;
+    }
+    .watchCategory {
+        padding:4px 12px;
+    }
+    /*h2{*/
+    /*    font:normal normal 600 2.025rem/3rem var(--robot0);*/
+    /*}*/
+    .product-description p, .color-cl{
+        padding:0px 0;
+    }
+    .productCost{
+        font-size:25px;
+        line-height:37px;
+    }
+    .blackHeading{
+        font-size:20px;
+    }
+    ul.colorChoose li{
+        width:35px;
+        height:35px;
+    }
+    ul.colorChoose li:before{
+        width:30px;
+        height:30px;        
+        top: 0.2px;
+        left: 0.2px;
+    }
+      section.similarProduct .owl-carousel .owl-nav button.owl-prev{
+        left:0;
+    }
+    section.similarProduct .owl-carousel .owl-nav button.owl-next{
+        right:0;
+    }
+        .walk-into-store .container{
+        max-width:100%;
+    }
+    .walkStore-Addresss{
+        margin-top:0;
+    }
+    .blog-titles{
+        height:auto;
+    }
+    .who-we-glave-content p{
+        padding-bottom:0px;
+    }
+}
+
+@media screen and (max-width: 1134px){
+ section.hotproduct, section.walk-into-store, section.art-bot, section.walk-into-store, section.client-satisfied, 
+ section.client-logo, section.who-we-glave{
+    margin-top:0px;
+   top:0;
+   position:relative;
+   padding:40px 0;
+ }
+ section.who-we-glave, section.client-logo{
+    padding-bottom:0;
+ }
+    section.banner {
+        height:397px;
+        background: #f0d8b0;
+    }
+
+    section.banner .img-bg{
+        background: none;
+        border-radius: 0;
+        top: -7.5rem;
+        right: 19px;
+    }
+    .banner-titles{
+          margin-left: 8%;
+        margin-top: 7%;
+        margin-bottom: auto;
+    }
+    .sidebarList_filter_btn__auHrh svg.kAmBDe {
+        opacity: 1;
+        width: 30px;
+    }
+    .menu-button::before {
+        background-size: 25px;
+        top: calc(50% - 9px);
+        left: calc(50% - 12px);
+    }
+    .banner .img-bg img{
+          margin-top: 7%;
+        margin-right: 8%;
+        margin-bottom: auto;
+    }
+    section.banner .img-bg img{
+        width:auto;
+    }
+   
+    .menu-button{
+        width:2em;
+        height:2em;
+        margin-left:0;
+        margin-right:0;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .container{
+        max-width:100%;
+    }
+    .client-satisfied ul{
+      grid-column-gap:15px;
+    }
+    .smart-product-slider{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    section.product{
+        background-size:auto;
+    }
+    section.product{
+        padding-bottom:40px;
+    }
+    .trmsPage .grid-list h2, 
+    .trmsPage .grid-list .termsCol, .btnBox,
+    .aboutPage .grid-list h2,
+    .privacyPage .grid-list .termsCol, .aboutPage .grid-list .termsCol,
+    .privacyPage .grid-list h2, .aboutPage .grid-list h2,
+    .cancellationPage .grid-list .termsCol,
+    .wacthCarePage .grid-list h2, .wacthCarePage .grid-list p{
+        width:100%;
+
+    }
+    .privacyPage .grid-list h2, .aboutPage .grid-list h2{
+        padding-right:0;
+    }
+    .cancellationPage .grid-list .termsCol{
+        padding-left:15px;
+    }
+    .grid-list p{
+        font-size:14px;
+    }
+    .grid-list li li, .grid-list li ol li{
+        font-size:14px;
+    }
+    section.product{
+        background:#fff;
+    }
+
+    
+.artCant, .artImgbx{
+    width:100%;
+}
+.artInner{
+    padding-top:15px;
+}
+.artImgbx{
+    height:auto;
+}
+.artImgbx img, .moredetails a {
+    display: table;
+    margin: auto!important;
+    
+}
+.artHeading, .descart{
+    text-align:center;
+}
+.artHeading:before {
+    left: calc(50% - 23px);
+}
+
+
+
+
+
+}
+
+@media screen and (max-width: 993px){
+    section.hotproduct, 
+    section.walk-into-store, 
+    section.art-bot, 
+    section.walk-into-store, 
+    section.client-satisfied, 
+    section.client-logo, 
+    section.who-we-glave,
+    section.similarProduct,
+    .productInfo,
+    .eros-mesh{
+    margin-top:0px;
+   top:0;
+   position:relative;
+   padding:30px 0;
+ }
+ footer{
+    padding-top:30px;
+ }
+ section.similarProduct h2{
+    padding-bottom: 15px;
+    margin: 0;
+ }
+    .logo img{
+        width:100%;
+         height:auto;
+    }
+   
+    section.banner{
+        height:304px;
+    }
+    .swiper-container {
+      /*height: 52%;*/
+      /*margin-top: 45%;*/
+    }
+      section.banner .Watchbanner{
+          height:100%;
+      }
+    section.banner .Watchbanner .banner-content {
+       
+        align-items: baseline;
+    }
+    section.banner .banner-titles {
+        margin-left: 15px;
+        margin-right: auto;
+    }
+    section.banner .banner-titles{
+      font-size:2rem;
+      line-height:3rem;
+    }
+    section.banner .img-bg img {
+       width: 199px;
+        height:auto;
+       margin-top:20px;
+    }
+  
+    .banner .viewallbtn a img{
+        margin-top:0;
+        
+    }
+    .Watchbanner .swiper-pagination-vertical.swiper-pagination-bullets, .Watchbanner .swiper-vertical>.swiper-pagination-bullets{
+        top:44%;
+    }
+    .spclcol {
+      padding:10px;
+    }
+    section.product .nav-product-tab li{
+        width:25%;
+    }
+    section.product .nav-product-tab{     
+        padding-top:10px;
+    }
+    section.product .nav-product-tab .nav-link{
+        font-size:18px;
+    }
+    .container{
+        max-width:100%;
+    }
+    section.product {
+      /*background: url(../images/group-54.png) no-repeat center bottom;*/
+      background:#fff;
+    }
+    section.client-satisfied{
+        display:none;
+    }
+    section.product .nav-product-tab .nav-link{
+        padding:0 5px;
+    }
+    .client-satisfied ul{
+      grid-column-gap: 5px;
+    }
+    .client-satisfied ul li .iconcol img{
+        height:30px;
+    }
+    .client-satisfied .satItems{
+        font-size: 14px;
+    }
+    .who-we-glave img.topgap{
+        display:none;
+    }
+    section.who-we-glave {
+    background: url(../images/who-we-glave.png) no-repeat bottom;
+  }
+  .footer-bottom{
+        margin-top:30px;
+  }
+   .breadcrumbsec{
+    padding:10px 0;
+   }
+  .product-description, .productInfo{
+    padding-top:25px;
+    padding-bottom:0;
+  }
+  .best-seller{
+    padding-bottom:15px;
+  }
+  .product-description p, .color-cl{
+    padding:15px 0;
+  }
+  .hotProductCol{
+    padding:0.5rem;
+  }
+  .footermail{
+    padding-top:15px;
+  }
+  .news-letter{
+      padding-top:10px;
+  }
+    .news-letter h3{
+        margin-top:0;
+    }
+  .walkstrDtls p{
+    padding:0;
+  }
+
+  .breadcrumbsec li, .breadcrumbsec li.breadcrumb-item.active,   
+  .breadcrumbsec a{
+    font-size: 13px;
+  }
+  .prdouct-list-details{
+    padding:30px;
+  }
+  .inner-logo img{
+        width: 100px;
+         height:auto;
+  }
+  .prdouct-list-details-sec{
+    padding:35px 0;
+  }
+  .sidebaar{
+    padding-top:35px;
+  }
+  .product-list-area{
+    padding-left:0;
+  }
+  .artImgbx img {
+    width: 130px;
+    height:auto;
+  }
+  .artHeading{
+    font-size:18px;
+  }
+  .artImgbx{
+    height:150px;
+  }
+  .owl-carousel .owl-item img{
+      width:100%;
+      height:auto;
+  }
+  section.product-list-banner img {
+    height: auto;
+    width: 100%;
+ }
+ .drift-zoom-pane img{
+     /*height:100%!important;*/
+     /*width:auto!important;*/
+ }
+ section.productInfo .nav-product-tab .nav-item{
+     padding-right:0;
+ }
+.eros-mesh img {
+    display: table;
+    margin: auto;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+   .logo img{
+        max-width: 71px;
+        height: auto;
+        margin-left: 10px;
+   }
+     section.walk-into-store{
+      background-size:200px 180px;
+      background-position:25% right;
+    }
+    section.hotproduct, section.art-bot, section.walk-into-store, section.client-satisfied, 
+    section.product, section.client-logo, section.who-we-glave, section.blog{
+        top:0;
+        margin-top:0;
+        padding:35px 0;
+    }
+     section.hotproduct h2, h2, section.blog h2{
+        margin-bottom:20px;
+        font-size:30px;
+        line-height: normal;
+    }
+    section.hotproduct .hotProductCol{
+        padding:10px;
+    }
+    section .container, section.walk-into-store .container{
+        max-width:100%;
+        padding:0 15px;
+    }
+    section.art-bot{
+        max-height:auto;
+        top:0;
+        padding-top:0;
+    }
+    section.product .nav-product-tab .nav-link {
+       padding: 11px 15px;
+       height:77px;
+     }
+     .client-satisfied ul{
+        flex-wrap:wrap;
+     }
+      section.client-satisfied ul li{
+        width:30%;
+    }
+    .client-satisfied ul li .client-sat-col{
+        height:70px;
+        margin-bottom:5px;
+    }
+    .who-we-glave img.topgap{
+        display:none;
+    }
+    section.who-we-glave {
+        background: url(../images/who-we-glave.png) no-repeat center bottom;
+    }
+    .viewallbtn a{
+        padding:10px 15px;
+    }
+    .footer-links{
+        padding-left:0;
+    }
+    footer h3{
+        font-size:21px;
+        padding-bottom:15px;
+    }
+    section.client-satisfied ul li:nth-child(4), section.client-satisfied ul li:nth-child(5){
+            width:45%;
+           
+    }
+     section.client-satisfied ul li:nth-child(4) .client-sat-col,
+     section.client-satisfied ul li:nth-child(5) .client-sat-col{
+        justify-content:center;
+    }
+    .footer-logo img{
+    width: 35%;
+    height: auto;
+    display: table;
+    margin: auto;
+    }
+    .footer-logo{
+        padding-bottom: 15px;
+    }
+    footer p{
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    footer h3{
+        font-size: 14px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    footer .footer-links .link-col ul li a{
+        font-size:15px;
+        line-height:22px;
+    }
+    .footer-bottom{
+        margin-top:20px;
+   }
+   .best-seller, .watchCategory, .blackHeading, section.productInfo .nav-product-tab .nav-link, 
+   ul.productSpecification li .col-product-hed, ul.productSpecification li .col-product-dtls{
+     font-size:16px;
+   }
+   .watchCategory{
+    margin-bottom:0px;
+   }
+   .product-description .watchCategory{
+        padding-left:0;
+    }
+    .mrpHeading{
+        padding-top:0;
+    }
+   .product-description p.prdModel{
+       font-size:25px;
+   }
+   .productCost{
+    font-size:20px;
+   }
+  ul.productSpecification li .col-product-hed,
+  ul.productSpecification li .col-product-dtls{
+    width:50%;
+  }
+  img.prdImg {
+    margin-top: 25px;
+    max-width:109px;
+    margin:25px auto 0 auto;
+    display: table;
+
+  }
+  .eros-mesh-content-box .eros-mesh-content p{
+    padding:0;
+    font-size:16px;
+    font-weight:300;
+    text-align:justify;
+  }
+  .descart{
+    font-size:14px;
+    line-height: 22px;
+  }
+    .artTag,
+    .artHeading
+    .moredetails{
+      text-align:center
+    }
+    .artHeading:before{
+        left: calc(50% - 23px);
+    }
+    .art2 .artImgbx{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wacthCarePage h1, .trmsPage h1, .cancellationPage h1, .privacyPage h1, .faqPage h1, .aboutPage h1{
+        border: none;
+        line-height: 27px;
+     }
+    .wacthCarePage h1 span, .trmsPage h1 span, .cancellationPage h1 span, .privacyPage h1 span, .faqPage h1 span, .aboutPage h1 span {
+           font-size: 25px;
+           padding-bottom:10px;
+           border:none;
+     }
+     .watchCare p, .trmsPage p, .privacyPage p, .aboutPage p{
+        font-size:14px;
+     }
+    h2.normHeading {
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            margin-bottom: 0;
+    }
+
+     .banner-titles h3{
+            font-size: 1.8rem;
+    }
+    .banner-titles p.descript{
+       font-size:20px;
+       line-height:26px;
+    }
+/*.inner-logo {
+    display: flex;
+    align-items:center;
+}
+.inner-logo img{
+    margin-left:0;
+    margin-right:0;
+}
+.logo-name{
+    margin:0;
+}*/
+
+  .blog-col{
+      margin:15px 0;
+  }
+  .stroeSlider{
+  max-width:220px;  
+}
+.top-nav ul li ul.dropdown-menu.carDropdown.show  li.cartView_item__FzdEM {
+    width: 300px;
+    padding:10px 0px;
+}
+.top-nav ul li ul.dropdown-menu.carDropdown.show  li.cartView_item__FzdEM img{
+    width:45px;
+}
+
+    
+}
+
+
+@media screen and (max-width: 576px){
+    .icon-nav{
+        display:none!important;
+    }
+    .Toastify__toast-container--top-right{
+    top: 4rem;
+    right: 4%;
+    max-width: 92%;
+    left: auto;
+    }
+    button.Toastify__close-button.Toastify__close-button--colored {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    /* right: -11px; */
+    right: -11px;
+    top: -12px;
+    opacity: 1;
+    z-index: 1000;
+    /* background: #fff; */
+    /* border-radius: 16px;*/
+    }
+    button.Toastify__close-button.Toastify__close-button--colored > svg {
+        fill: #fff;
+    }
+    .popupImgBox img {
+        width: 100%;
+        height: auto;
+    }
+    .popupImgBox{
+        height:100vh;
+    }
+    .productGalleryBox .row {
+        flex-wrap: nowrap;
+    }
+    .prdsThumbImg {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .productGalleryBox {
+       overflow-x: auto;
+    }
+    .art1{
+        padding:20px;
+    }
+    .artImgbx{
+        height:auto;
+    }
+    .artInner{
+        padding-top:10px;
+    }
+    .artInner .moredetails{
+        padding-top:5px;
+    }
+    a.btn-whatsapp-pulse{
+        padding: 18px;
+        font-size: 17px;
+        bottom: 10px!important;
+        right:25px;
+    }
+    .scrollToTop_button__UDUNW{
+        width: 35px;
+        height: 35px;
+        font-size: 19px;
+    }
+    section.client-logo .owl-carousel .owl-item{
+        margin-top:0;
+    }
+    section.client-logo .owl-carousel .owl-item a img{
+        width:100px!important;
+        height:auto!important;
+    }
+    .owl-carousel .owl-item .store .map{
+        width:20px;
+        height:20px;
+        font-size:10px;
+        left:calc(50% - 10px);
+        bottom:-6px;
+    }
+    
+/*    .artImgbx{*/
+/*    height:auto;*/
+/*    width:40%;*/
+/*}*/
+/*.artCant{*/
+/*  width:60%;*/
+/*  text-align:left;*/
+/*}*/
+
+/*.descart{*/
+/*   text-align:left;   
+}*/
+
+.happy-valentines{display:none;}
+    section.hotproduct, section.art-bot,
+    section.walk-into-store, 
+    section.client-satisfied, section.product, 
+    section.client-logo, section.who-we-glave, section.blog,
+    section.product section.hotproduct{
+        padding:30px 0
+    }
+    section.product section.hotproduct{
+      padding-top:0;  
+    }
+    section.walk-into-store{
+        padding-bottom:0;
+    }
+    footer{
+        margin-top:0px;
+        padding-top:30px;
+    }
+    .top-nav ul li.mob-hide{
+        display:none;
+    }
+    section.banner .banner-titles{
+        padding-right: 10px;
+    }
+     section.banner .img-bg img{
+        height: 143px;
+        width:auto;
+    }
+    section.banner .img-bg{
+        height: 16.75rem;
+    }
+     .banner-titles h3{
+            font-size: 1.5rem;
+    }
+    .banner-titles p.descript{
+       font-size:14px;
+       line-height:18px;
+    }
+  
+    section.banner{
+        height:279px;
+    }
+    section.banner .banner-titles{
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding-left: 0px;
+    }
+    .maintain p{
+        margin: 0;
+        font-size: 10px;
+        padding: 3px 0;
+        line-height: 14px;
+    }
+     section.banner.Watchbanner .swiper-pagination-vertical.swiper-pagination-bullets,  
+     section.banner .Watchbanner .swiper-vertical>.swiper-pagination-bullets{
+        right:0.5rem;
+        top:6rem;
+        
+    }
+    .offcanvas.offcanvas-start{
+        max-width:250px;
+    }
+     section.banner .swiper-pagination-bullet{
+        width:0.5rem;
+        height:0.5rem;
+    }
+    section.banner{
+        height:180px;
+    }
+    section.banner .img-bg{
+      top:-4.5rem;
+    }
+    section.banner .viewallbtn a img{
+        width:25px;
+    }
+    section.banner .viewallbtn a{
+      font-size:0.8rem;
+    }
+    .hotproduct .swiper-button-next, .hotproduct .swiper-button-prev{
+        padding:15px;
+    }
+    .hotproduct .swiper-button-next:after, .hotproduct .swiper-button-prev:after{
+        font-size:10px!important;
+    }
+    .Watchbanner .swiper-pagination-vertical.swiper-pagination-bullets, .Watchbanner .swiper-vertical>.swiper-pagination-bullets{
+        top:63%;
+    }
+    section.banner .banner-content{
+          height: 84%;
+    }
+    section.hotproduct .hotProductCol, section.product .hotProductCol{
+        padding:10px 10px 0 10px;
+    }
+    .footer-links{
+        flex-wrap:wrap;
+    }
+   .footer-links{
+        padding-left:0;
+        padding-bottom: 15px;
+    }
+    section.client-satisfied ul li{
+        width:48%;
+    }
+    section.product .hotProductCol{
+        margin-bottom:5px;
+    }
+    section.hotproduct h2, h2, section.blog h2 {
+    margin-bottom:15px;
+    font-size:1.2rem;
+    line-height: normal;
+    font-weight:500;
+   }
+   .blog-titles{
+      padding-top:16px;
+      font-size:18px;
+      line-height:normal;
+   }
+   .blog-info{
+      padding-top:4px;
+   }
+   .autherpic, .postDates{
+      font-size:13px;
+   }
+   .autherpic img {
+    width: 30px;
+    height:auto;
+    }
+    .viewallbtn a {
+     padding: 5px 12px;
+     font-size: 0.8rem;
+    }
+    .viewallbtn a img{
+      width:24px;
+    }
+    .viewallbtn a span:before{
+        bottom:-5px;
+    }
+    .viewallbtn a b{
+        display:none;
+    }
+    .spclcol {
+        padding: 5px;
+    }
+    .walkstrDtls p, .who-we-glave-content p{
+        padding-top:0;
+        padding-bottom:0;
+    }
+    section.art-bot{
+        padding-bottom:0;
+
+    }
+     section.client-satisfied ul li:nth-child(3){
+        width:48%;
+        margin-left:-5px;
+    }
+    section.client-satisfied ul li:nth-child(4){
+        width:48%;
+        margin-right:-5px;
+    }
+    section.client-satisfied ul li:nth-child(5){
+        width:96%;
+    }
+    .owl-theme .owl-nav{
+            margin-top:0;
+    }
+    .client-logo-padding {
+      padding: 0 10px 0 15px;
+    }
+    section.product .nav-product-tab .nav-link,
+    section.productInfo .nav-product-tab .nav-link:hover, section.productInfo .nav-product-tab .nav-link.active, section.productInfo .nav-product-tab .nav-link a.productDetails_active__BJbU4,
+    .best-seller, .watchCategory, .blackHeading, section.productInfo .nav-product-tab .nav-link{
+        font-size: 14px;
+    }
+    section.product .nav-product-tab .nav-link {
+        padding: 5px 10px;
+        height: 60px;
+        line-height: normal;
+    }
+    section.product .tab-content{
+        /*padding-top:20px;*/
+    }
+    .footer-logo img{
+        width:80px;
+        height: auto;
+        display: table;
+        margin: auto;
+    }
+    .footer-bottom{
+        margin-top:15px;
+   }
+   .footermail{
+        padding-top:25px;
+   }
+   .footer-bottom {
+    font-size:13px;
+    padding-left:15px;
+    padding-right:15px
+   }
+   .productNames, .walkstrDtls p, .who-we-glave-content p, .blog-titles{
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 0;
+        margin: 0;
+   }
+   .blog-titles h3, .blog-titles{
+    text-align:center;
+}
+  
+   .logo {
+     padding: 0.4rem 0;
+   }
+   .menu-button{
+        margin-top:0;
+        margin-bottom:0;
+   }
+   .top-nav ul li{
+      padding: 0 0.25rem;
+   }
+   .top-nav ul li img{
+   position: relative;
+    width: 18px;
+    height: auto;
+    top: 0px;
+}
+.top-nav ul li ul.dropdown-menu.carDropdown.show li.cartView_item__FzdEM img{
+    width: auto!important;
+    height: 100%;
+}
+section.hotproduct .swiper-horizontal{
+    min-height:auto!important;
+    padding:0!important;
+}
+/*.swiper-slide{*/
+/*    width: 50%!important;*/
+/*}*/
+
+/*
+.artImgbx{
+    height:auto;
+    width:40%;
+}
+.artCant{
+  width:60%;
+  text-align:left;
+}
+
+*/
+
+ .top-nav>ul>li.headerSearch{
+     display:none;
+ }
+   .icon-nav{
+        padding-right:5px;
+   }
+
+   /*search box code*/
+  .top-nav ul li input[type="text"] {
+        padding: 0px 6px;
+        width: 23px;
+        background-size: 12px;
+        background-position: 5px 7px;
+  }
+  span.searchBox{
+      padding-left:0;
+       padding-right:0;
+  }
+  .top-nav ul li .expand-box:focus {
+    background-position:100px;
+    background-repeat:no-repeat;
+    background-size:10px;
+    width:120px;
+  }
+.top-nav ul li ul.dropdown-menu.show{
+    right: 7px!important;
+    top: 0px!important;
+}
+.top-nav ul li ul.dropdown-menu.carDropdown.show svg.kAmBDe{
+    filter: brightness(0) invert(1);
+    fill: white!important;
+}
+  .top-nav ul li ul li:first-child:before{
+    right: 0;
+    top: -8px;
+  }
+    ul.booking-details{
+    grid-column-gap: 0;
+    display: flex;
+   }
+   .eros-mesh-content-box .eros-mesh-content{
+        padding-right: 0;
+        width: 100%;
+        overflow-x: auto;
+   }
+   .banner .swiper-container{
+     
+   }
+   .productMainSlider .swiper-button-next, 
+   .productMainSlider .swiper-button-prev{
+        padding: 16px;
+        width: 35px;
+        height: 35px;
+   }
+   .productMainSlider .swiper-button-prev:after, .productMainSlider .swiper-button-next:after{
+    font-size:19px;
+   }
+    section.eros-mesh .owl-carousel .owl-nav button.owl-next,
+     section.eros-mesh .owl-carousel .owl-nav button.owl-next:before{
+       width:32px;
+       height:44px;
+      
+         border-radius:4px 0px 0px 4px;
+     } 
+
+     section.eros-mesh .owl-carousel .owl-nav button.owl-prev,
+     section.eros-mesh .owl-carousel .owl-nav button.owl-prev:before{
+       width:32px;
+       height:44px;
+       border-radius:0 4px 4px 0;
+     }
+     section.similarProduct .owl-carousel .owl-nav button.owl-next:before,
+     section.similarProduct .owl-carousel .owl-nav button.owl-prev:before{
+        background-size: 7px 24px !important;
+}
+ .prdouct-list-details-sec{
+    padding:15px 0 25px 0;
+  }
+  .noOfProducts{
+    padding: 3px 6px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .seller-text{
+    width:85px;
+  }
+  .filterArea{
+    background: #f4f2f0;
+    padding: 7px;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-bottom: 15px;
+  }
+  .product-list-area {
+    padding: 10px 0;
+ }
+ .product-list-area .hotProductCol{
+    margin-bottom:10px;
+ }
+ .product-title{
+    font-size:15px;
+ }
+ .seller-text{
+    color:#333;
+ }
+ select.customselect{
+    max-width: 144px;
+ }
+ section.mobile-footer{
+    display:block;
+ }
+  .banner-titles h4{
+      font-size:0.6rem;
+  }
+ .banner-titles h3{
+     font-size:0.8rem;
+     line-height:1rem;
+     font-weight:500;
+ }
+ .banner-titles p.descript{
+     font-size:11px;
+     padding-top:0;
+     display:none;
+ }
+ .top-nav>ul>li{
+    display: flex;
+    height: 100%;
+ }
+ .top-nav>ul>li>a{
+    padding-top: 6px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 0;
+    font-size:15px;
+    letter-spacing: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+ }
+ .top-nav ul li .mega-content ul.shopByCat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.top-nav ul li .mega-content ul.shopByCat>li,
+.top-nav ul li .mega-content ul.shopByBrand>li{
+    width: 50%;
+}
+.product_name__VZt3x a{
+    display: -webkit-box;
+    /* height: 39px; */
+    /* padding-bottom: 8px; */
+    /* margin: 0 auto; */
+    font-size: 14px;
+    /* opacity: 0.8; */
+    letter-spacing: 0.9px;
+    /* font-weight: 400; */
+    line-height: 18px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    text-transform: capitalize;
+}
+.menu-wrap .btn-close{
+    width:25px;
+    height:25px;
+}
+.menu-button::before{
+    background-size: 25px;
+    top: calc(50% - 9px);
+    left: calc(50% - 12px);
+}
+.menu-wrap .btn-close:before{
+    background-size: 25px;
+    top: calc(50% - 1.25rem);
+    left: calc(50% - 12px);
+    font-size: 22px;
+}
+.top-nav ul li .mega-content{
+    padding:0 0 15px 0;
+}
+.top-nav ul li .mega-content h3{
+    font-size: 13px;
+}
+
+section.hotproduct .swiper-horizontal{
+    padding:0!important;
+}
+
+.walkstrDtls {
+    padding-right: 0px;
+    text-align: center;
+}
+.walk-into-store .accordion-button {
+    padding:12px 7px;
+    font-size: 13px;
+}
+    .descart,
+    .productNames, .walkstrDtls p, .who-we-glave-content p, 
+    footer p,
+    footer .footer-links .link-col ul li a,
+    .footermail,
+    .footercoll,
+    .normText,
+     ul.productSpecification li .col-product-hed,
+     .eros-mesh-content-box .eros-mesh-content p,
+     ul.productSpecification li .col-product-dtls,
+     .moredetails a,
+     .walk-into-store .accordion-body,
+     .numberopt{
+        font-size:14px;
+        
+    }
+    /*.faqPage .accordion-button{*/
+    /*     font-size:13px;*/
+    /*     line-height:23px;*/
+    /*}*/
+    .storeAddress{
+        text-align:left;
+    }
+    .moredetails a:before{
+        background-size:14px;
+    }
+    .client-satisfied{
+        display:none;
+    }
+    section.product{
+        background-size: contain;
+        background: #fff;
+        padding-bottom: 0;
+        padding-top:0;
+    }
+    section.hotproduct .priceHover{
+        padding-bottom:0;
+    }
+    .eros-mesh img{
+        display: table;
+        margin: auto;
+    }
+    .eros-mesh-content{
+        padding-bottom:10px;
+    }
+    section.product .nav-product-tab li{
+        width: auto;
+        padding: 0 0px;
+    }
+    section.product .nav-product-tab .nav-link {
+        padding: 5px 10px;
+        height: 35px;
+        line-height: normal;
+    } 
+    section.product .nav-product-tab li:first-child a{
+        padding-left:0;
+        
+    }
+     section.product .nav-product-tab li:last-child a{
+        padding-right:0;
+        
+    }
+    .blog-col{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .footermail{
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    footer .footer-links .link-col{
+        width:100%;
+    }
+    footer .footer-links .link-col ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: -10px;
+    }
+     footer .footer-links .link-col ul li{
+         width: auto;
+         padding: 1px 10px;
+     }
+     footer h3, footer form{
+         margin-top:15px;
+         margin-bottom: 5px;
+     }
+     .footermail, .footercoll {
+        padding-top: 0;
+    }
+
+   footer form{
+       margin-bottom:10px;
+   }
+   .footer-bottom{
+       padding:10px 0;
+   }
+   .product-list-area .row-cols-2>*{
+       padding:0;
+   }
+   .sidebarList_filter_btn__auHrh svg.kAmBDe{
+       opacity:1;
+       width:30px;
+   }
+   .productMainSlider .swiper-slide img{
+       height:200px;
+       width:auto;
+   }
+   .productMainSlider .swiper-thumbs div img{
+        height: 43px;
+        width: auto;
+   }
+   .productMainSlider .swiper-thumbs .swiper-slide{
+       height:50px;
+   }
+   .displayOpt:nth-child(odd),
+   .displayOpt:nth-child(even){
+       width:100%;
+   }
+   .displayOpt:nth-child(odd) .prodNormHd,
+   .product-description .displayOpt .prodNormHd{
+       width:40%;
+   }
+   .product-description .displayOpt p{
+       width:60%;
+   }
+    .stroeSlider{
+      max-width:100%;  
+    }
+    button.addToCartBtn{
+        height:42px;
+    }
+    section.mobile-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 83%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+   
+}
+
+

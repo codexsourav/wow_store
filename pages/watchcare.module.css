@@ -1,0 +1,110 @@
+.TexTopBanner{
+    height:300px;
+    background:#88705a;
+}
+
+ul.gridGallery{
+	width:100%;
+	flex-wrap:wrap;
+	display:flex;
+	grid-column:2;
+	grid-column-gap:15px;
+	grid-row-gap:15px;
+	margin:0;
+	padding:0;
+	list-style:none;
+
+}
+.about-gallery{
+  padding:0;
+}
+ul.gridGallery li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative;
+	overflow:hidden;
+}
+ul.gridGallery li:before{
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    background-image:linear-gradient(to top, rgb(11 0 0), #0b0b0000);
+    
+}
+
+
+ul.gridGallery li .captionText{
+    position: absolute;
+    bottom: 50px;
+    padding:100px 15px 15px 15px;
+    color: #fff;
+    background-image:linear-gradient(to top, rgb(11 0 0 / 73%), #0b0b0000);
+    width: 100%;
+    bottom: -135px;
+    z-index:2;
+    transition-duration: 1s;
+}
+ul.gridGallery li .captionText h2{ 
+    font: 600 2rem/2.5rem var(--Raleway);
+    /*text-shadow: -1px 0px 1px #000;*/
+    color: #F0D8B0;
+}
+ul.gridGallery li .captionText p{
+  font:300 18px/26px Roboto;
+  color:#fff;
+}
+ul.gridGallery li .captionText h2 span{
+	background: #000;
+    margin-top: 5px;
+    display: table;
+    padding: 2px 8px;
+    line-height: 35px;
+}
+ul.gridGallery li img{
+	/*filter: grayscale(100%);*/
+	transition-duration: 1s;
+}
+ul.gridGallery li:hover img{
+	filter: grayscale(0%);
+	scale:1.2;
+}
+ul.gridGallery li:hover .captionText{
+    bottom:0;
+}
+ul.gridGallery li:nth-child(1),
+ul.gridGallery li:nth-child(5) {
+  width:calc(40% - 7.5px);
+}
+
+ul.gridGallery li:nth-child(2),
+ul.gridGallery li:nth-child(6) {
+  width:calc(60% - 7.5px);
+}
+ul.gridGallery li:nth-child(3) {
+  width:calc(62% - 7.5px);
+}
+
+ul.gridGallery li:nth-child(4) {
+  width:calc(38% - 7.5px);
+}
+.price{
+    font-size:41px;
+    line-height:40px;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+.startingFrom{
+    font-size:16px;
+    font-weight:500;
+}
+.enq{
+    background:#E5BA73;
+    padding:10px 15px;
+    color:#fff;
+    font-size:18px;
+    font-weight:400;
+    display:table;
+}
