@@ -72,7 +72,7 @@ header {
 }
 .normText{
     color: #000000;
-    opacity: 0.80;
+    opacity: 0.90;
     font-weight: 300;
     font-size: 15px;
     line-height: 25px;
@@ -4210,7 +4210,7 @@ span.searchBox {
 }
 
 .top-nav ul li .mega-content ul.shopByBrand>li {
-  width: 25%;
+  width: 33%;
 }
 
 ul.shopByBrand>li>a {
@@ -4373,3 +4373,5 @@ label.form-check-label  a {
         padding-top: 3px;
 }
 .bdr-0{border:none!important}
+
+

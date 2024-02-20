@@ -36,7 +36,7 @@ export default async function apiHandler(req, res) {
             ? { bestSelling: true }
             : null;
         if (arg) {
-          const data = await ProductModel.find(arg).sort( { "_id": -1 } ).limit(10).select(pif);
+          const data = await ProductModel.find({  quantity: { $ne: 0 }, arg }).sort( { "_id": -1 } ).limit(10).select(pif);
           res.setHeader(
             "Cache-Control",
             "s-maxage=300, stale-while-revalidate"

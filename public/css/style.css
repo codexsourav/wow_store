@@ -123,6 +123,7 @@ header {
 .top-nav ul li:last-child {
   border: none;
 }
+
 .icon-nav {
   border-right: solid 0.125rem var(---darkgray);
 }
@@ -2255,3 +2256,5 @@ h2.normHeading {
 .hotProductCol:hover .btnaction.d-flex.priceRow{
     bottom:0;
 }
+
+

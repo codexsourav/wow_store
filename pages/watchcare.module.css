@@ -1,6 +1,9 @@
 .TexTopBanner{
-    height:300px;
+
     background:#88705a;
+}
+.TexTopBanner img{
+    width:100%;
 }
 
 ul.gridGallery{
@@ -24,6 +27,7 @@ ul.gridGallery li{
 	list-style:none;
 	position:relative;
 	overflow:hidden;
+	height:300px;
 }
 ul.gridGallery li:before{
     content:'';
@@ -32,6 +36,10 @@ ul.gridGallery li:before{
     position:absolute;
     z-index:1;
     background-image:linear-gradient(to top, rgb(11 0 0), #0b0b0000);
+    
+}
+.aboutgallery .container{
+    max-width:1024px;
     
 }
 
@@ -43,17 +51,18 @@ ul.gridGallery li .captionText{
     color: #fff;
     background-image:linear-gradient(to top, rgb(11 0 0 / 73%), #0b0b0000);
     width: 100%;
-    bottom: -135px;
+    bottom:0px;
     z-index:2;
     transition-duration: 1s;
 }
 ul.gridGallery li .captionText h2{ 
-    font: 600 2rem/2.5rem var(--Raleway);
+    font:400 1.3rem/2.5rem var(--Raleway);
+    padding-bottom:5px;
     /*text-shadow: -1px 0px 1px #000;*/
-    color: #F0D8B0;
+    color: #fff;
 }
 ul.gridGallery li .captionText p{
-  font:300 18px/26px Roboto;
+  font:300 14px/20px Roboto;
   color:#fff;
 }
 ul.gridGallery li .captionText h2 span{
@@ -91,20 +100,43 @@ ul.gridGallery li:nth-child(4) {
   width:calc(38% - 7.5px);
 }
 .price{
-    font-size:41px;
-    line-height:40px;
-    font-weight:bold;
-    padding-bottom:10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 0 10px 0;
+    display: table;
+    line-height: 24px;
 }
 .startingFrom{
     font-size:16px;
     font-weight:500;
 }
 .enq{
-    background:#E5BA73;
-    padding:10px 15px;
-    color:#fff;
-    font-size:18px;
-    font-weight:400;
-    display:table;
+   background: #E5BA73;
+    padding: 7px 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    display: table;
+}
+.justifyContent{
+    text-align: justify;
+}
+
+@media screen and (max-width: 767px){
+    ul.gridGallery li:nth-child(1),
+    ul.gridGallery li:nth-child(2),
+    ul.gridGallery li:nth-child(3),
+    ul.gridGallery li:nth-child(4),
+    ul.gridGallery li:nth-child(5),
+    ul.gridGallery li:nth-child(6){
+      width:100%;
+    }
+    ul.gridGallery li .captionText h2{
+        padding-bottom:0;
+        margin:0;
+    }
+    ul.gridGallery li .captionText{
+        bottom:0px;
+    }
 }

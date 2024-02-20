@@ -24,6 +24,7 @@ const SettingsPageGateway = () => {
   const paypal = useRef();
   const stripe = useRef();
   const sslCommerz = useRef();
+  const payu = useRef();
 
   const { session } = useSelector((state) => state.localSession);
   const [permissions, setPermissions] = useState({});
@@ -40,6 +41,7 @@ const SettingsPageGateway = () => {
         paypal: paypal.current.checked,
         stripe: stripe.current.checked,
         sslCommerz: sslCommerz.current.checked,
+        payu: payu.current.checked,
       });
       const formData = new FormData();
       formData.append("gateway", data);
@@ -125,6 +127,35 @@ const SettingsPageGateway = () => {
                     </div>
                   </div>
                 </div>
+                {/* <div className="col-xl-4 col-lg-6">
+                  <div className="card mb-5 border-0 shadow">
+                    <div className="card-header bg-white py-3 text-center fw-bold">
+                      PayU Payment Activation
+                    </div>
+                    <div className="card-body">
+                      <div className="float-start">
+                        <ImageLoader
+                          src="/images/PayUmoney_Logo.jpg"
+                          width={100}
+                          height={50}
+                          alt="payu"
+                        />
+                      </div>
+                      <div className="form-check form-switch my-3 float-end">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          id="inp-111"
+                          ref={payu}
+                          defaultChecked={settings.paymentGateway.payu || false}
+                        />
+                        <label className="form-check-label" htmlFor="inp-111">
+                          Status
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
                 <div className="col-xl-4 col-lg-6">
                   <div className="card mb-5 border-0 shadow">
                     <div className="card-header bg-white py-3 text-center fw-bold">

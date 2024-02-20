@@ -1,7 +1,12 @@
 import ImageLoader from "../Image";
 import classes from "./checkout.module.css";
 
-const PaymentGatewayList = ({ selectPaymentMethod, submitOrder, settings, fullOrderData }) => {
+const PaymentGatewayList = ({
+  selectPaymentMethod,
+  submitOrder,
+  settings,
+  fullOrderData,
+}) => {
   return (
     <div>
       <h6>Select a payment method :</h6>
@@ -22,7 +27,7 @@ const PaymentGatewayList = ({ selectPaymentMethod, submitOrder, settings, fullOr
                 height={50}
                 alt="Cash On Delivery"
               />
-            {/*  <span>Cash On Delivery</span>*/}
+              {/*  <span>Cash On Delivery</span>*/}
             </div>
           </label>
         )}
@@ -41,7 +46,7 @@ const PaymentGatewayList = ({ selectPaymentMethod, submitOrder, settings, fullOr
                 height={50}
                 alt="Paypal"
               />
-            {/*  <span>Paypal</span> */}
+              {/*  <span>Paypal</span> */}
             </div>
           </label>
         )}
@@ -60,41 +65,44 @@ const PaymentGatewayList = ({ selectPaymentMethod, submitOrder, settings, fullOr
                 height={50}
                 alt="Stripe"
               />
-             {/* <span>Stripe</span>*/}
+              {/* <span>Stripe</span>*/}
             </div>
           </label>
         )}
         {settings.sslCommerz && (
-          <label className={`${classes.payment_card_label}  ${classes.ccavenue}`}>
+          <label
+            className={`${classes.payment_card_label}  ${classes.ccavenue}`}
+          >
             <input
               type="radio"
               name="payment_method"
               value="ccavenue"
               onChange={selectPaymentMethod}
             />
-            <div className={classes.payment_card} style={{height:""}}>
+            <div className={classes.payment_card} style={{ height: "" }}>
               <ImageLoader
                 src="/images/ccavenue.png"
                 width={128}
                 height={21}
                 alt="CCAvenue"
               />
-                 {/*<span>CCAvenue</span>*/}
+              {/*<span>CCAvenue</span>*/}
             </div>
           </label>
         )}
         <label className={`${classes.payment_card_label}  ${classes.cmpOrder}`}>
-            <input
-              type="radio"
-              name="payment_method"
-              value="payu"
-              checked
-            />Pay Online
-            <div className={classes.payment_card}>
-              <img src="/images/payment-options.jpg" width='300' />
-               {/*  <span>Payu</span> */}
-            </div>
-          </label>
+          <input
+            type="radio"
+            name="payment_method"
+            value="payu"
+            onChange={selectPaymentMethod}
+          />
+          Pay Online
+          <div className={classes.payment_card}>
+            <img src="/img/payment.svg" width="350" />
+            {/*  <span>Payu</span> */}
+          </div>
+        </label>
         <button className="my-3" onClick={submitOrder}>
           Complete Order
         </button>

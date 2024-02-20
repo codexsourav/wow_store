@@ -36,7 +36,94 @@ button {
   transition-duration: 0.4s;
   transition: all 0.4s;
 }
+.customBorder{
+    padding: 12px 0px!important;
+    border-bottom: 1px solid #f4f4f4;   
+    margin:0!important;
+    display:block!important;
+    width:100%;
+    line-height:normal!important;
+    position:relative;
+}
+.customBorder .beZTyX{
+   float:right; 
+   transform: rotate(0deg);
+   margin-top:4px;
+}
+/*.customBorder:before{*/
+/*    font:normal 14px/1 FontAwesome;*/
+/*    position:absolute;*/
+/*    content: "\f107";*/
+/*    right:0;*/
+/*    width:10px;*/
+/*    height:10px;*/
+/*}*/
 
+label.customBorder.active {
+    border: none;
+}
+.customBorder.active .beZTyX{
+   float:right; 
+       transform: rotate(180deg);
+}
+.filtermenu_menu__krZKD:first-child .beZTyX{
+    margin-top:5px;
+    transform: rotate(0deg);
+}
+
+
+.hidefilter{
+    height:0;
+    overflow:hidden;
+    /*transition:all ease-in 0.5s;*/
+}
+.mt-less-15{
+    margin-top:0px!important;
+}
+
+.showFilter{
+    height: auto;
+    overflow: hidden;
+    /*transition: all ease-in 0.5s;*/
+    padding-bottom: 12px;
+    border-bottom:1px solid #f4f4f4;
+}
+
+.top-nav ul li .careNm a {
+     padding-top:15px;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    padding-left:0;
+    display:block;
+}
+.top-nav ul li .moredetails a:hover span{
+    border:none;
+    text-decoration:none;
+}
+.top-nav ul li .moredetails a{
+    font-family: "Raleway", sans-serif;
+    color: var(--darksilever);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    display: block;
+    text-transform: capitalize;
+    padding-left: 25px;
+    margin-top: 5px;
+}
+.top-nav ul li .moredetails a:before{
+      /* background-size: 13px; */
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    top: 8px;
+    background: #D39F53;
+    
+}
 button:disabled {
   cursor: not-allowed;
 }
@@ -531,6 +618,9 @@ ul.thumbs {
     max-width: 95%;
     width: 95%;
     padding: 0 5px !important;
+  }
+  .customBorder{
+      padding-right:10px!important;
   }
 
   .custom-carousel .control-dots {

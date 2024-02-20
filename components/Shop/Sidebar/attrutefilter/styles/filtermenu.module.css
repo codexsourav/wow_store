@@ -56,3 +56,9 @@ background-repeat:no-repeat;
 background-position:50%;
 
 background-repeat:no-repeat}
+
+@media screen and (max-width: 767px){
+    .filterMenu .menu .view{
+        padding-right:10px;
+    }
+}

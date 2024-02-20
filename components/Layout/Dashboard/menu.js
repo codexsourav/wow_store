@@ -232,18 +232,18 @@ const DashboardMenu = (props) => {
       icon: <Settings width={20} height={20} />,
       target: "settings",
       subMenu: [
-       // {
-       //   name: "General Settings",
-       //   url: "/dashboard/settings",
-       // },
+        // {
+        //   name: "General Settings",
+        //   url: "/dashboard/settings",
+        // },
         {
           name: "Layout Settings",
           url: "/dashboard/settings/layout",
         },
-       // {
-       //   name: "Graphics Content",
-       //   url: "/dashboard/settings/graphics",
-       // },
+        // {
+        //   name: "Graphics Content",
+        //   url: "/dashboard/settings/graphics",
+        // },
         {
           name: "Seo",
           url: "/dashboard/settings/seo",
@@ -252,18 +252,18 @@ const DashboardMenu = (props) => {
           name: "Script",
           url: "/dashboard/settings/script",
         },
-      //  {
-       //   name: "Payment Gateway",
-       //   url: "/dashboard/settings/gateway",
-      //  },
-     //   {
-     //     name: "Social Media Login",
-      //    url: "/dashboard/settings/login",
-      //  },
-      //  {
-       //   name: "Security",
-       //   url: "/dashboard/settings/security",
-      //  },
+        {
+          name: "Payment Gateway",
+          url: "/dashboard/settings/gateway",
+        },
+        //   {
+        //     name: "Social Media Login",
+        //    url: "/dashboard/settings/login",
+        //  },
+        //  {
+        //   name: "Security",
+        //   url: "/dashboard/settings/security",
+        //  },
       ],
     },
     {
@@ -275,7 +275,7 @@ const DashboardMenu = (props) => {
           name: "Home Page",
           url: "/dashboard/page/home",
         },
-        
+
         {
           name: "FAQ",
           url: "/dashboard/page/faq",

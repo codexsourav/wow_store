@@ -1,4 +1,5 @@
 import { Filter } from "@styled-icons/bootstrap/Filter";
+import { Check, ChevronDown, ChevronUp, ChevronRight } from '@styled-icons/bootstrap'
 import React, { useEffect, useState } from "react";
 import BrandList from "./brand";
 import ShortMenu from "~/components/Shop/Sidebar/ShortMenu";
@@ -13,6 +14,40 @@ function SidebarList(props) {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [hideTopBar, setHideTopBar] = useState(false);
+  
+  //geneder
+  let[genCls, setGnClass]= useState('')
+  let[genHide, seGhHd]= useState('hidefilter')
+  
+  
+  //brand
+  let[brCls, setbrClass]= useState('')
+  let[brHide, seBrHd]= useState('hidefilter')
+  
+  let actiVeDeactive = ()=>{
+      if(genCls === ''){
+          setGnClass('active')
+          seGhHd('showFilter')
+      }
+      else{
+        setGnClass('')
+        seGhHd('hidefilter')
+      }
+      
+  }
+  
+  let actiBrand = ()=>{
+      //brHide
+      
+      if(brCls===''){
+          setbrClass('active')
+          seBrHd('showFilter')
+      }
+      else{
+           setbrClass('')
+          seBrHd('hidefilter')
+      }
+  }
 
   useEffect(() => {
       
@@ -228,23 +263,27 @@ function SidebarList(props) {
           }
 
         
-            
+         
             <div className={c.category_item}>
-              <label className="border border-0 mb-0">Gender</label>
+              <label className={`customBorder ${genCls}`} onClick={actiVeDeactive}>Gender   <ChevronDown size={13} color='#000' /></label>
+              <div className={genHide}>
               <SidebarCategoryList
                 category={props.category}
                 updateCategory={props.updateCategory}
                 updateSubCategory={props.updateSubCategory}
               />
+              </div>
             </div>
 
 
-            <div className={c.category_item}>
-              <label>Brands</label>
-              <BrandList brand={props.brand} updateBrand={props.updateBrand} />
+            <div className={`c.category_item`}>
+              <label className={`customBorder ${brCls}`} onClick={actiBrand}>Brands <ChevronDown size={13} color='#000' /></label>
+              <div className={brHide}>
+                 <BrandList brand={props.brand} updateBrand={props.updateBrand} />
+              </div>
             </div>
 
-            <div className={c.category_item}>
+            <div className={`c.category_item mt-less-15`}>
               
               <FilterMenu
                 attrData={props.attr}

@@ -66,14 +66,14 @@ const CSVToJsonConverter = () => {
     };
     const id = toast.loading("Please wait...")
     try {
-      setLoading(true)
+      setLoading(true);
       const response = await axios.request(options);
       toast.update(id, { render: response.data.message, type: "success", isLoading: false, ...toastConfig });
-      setLoading(false)
+      setLoading(false);
     } catch (error) {
-      console.log("Import Error ====> ", error);
+      console.log("Import Error ====> ", error.response);
       toast.update(id, { render: error.response?.data.message || "Something went wrong", type: "error", isLoading: false, closeOnClick: true, });
-      setLoading(false)
+      setLoading(false);
     }
   }
 

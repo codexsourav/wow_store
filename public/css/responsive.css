@@ -937,6 +937,9 @@
         margin-top:0;
         margin-bottom:0;
    }
+   .watchCareNav{
+       padding-top:10px;
+   }
    .top-nav ul li{
       padding: 0 0.25rem;
    }
@@ -946,6 +949,16 @@
     height: auto;
     top: 0px;
 }
+ .top-nav ul li .watchCareNav a{
+     padding-left:0;
+     padding-right:0;
+ }
+ .top-nav ul li .watchCareNav .moredetails a{
+     padding-left:25px;
+ }
+   .top-nav ul li .watchCareNav img{
+       width:100%;
+   }
 .top-nav ul li ul.dropdown-menu.carDropdown.show li.cartView_item__FzdEM img{
     width: auto!important;
     height: 100%;

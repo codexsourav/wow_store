@@ -1,20 +1,32 @@
+'use client'
+
 import Error500 from "~/components/error/500";
 import HeadData from "~/components/Head";
+import {useEffect} from 'react'
 import { appUrl, fetchData, setSettingsData } from "~/lib/clientFunctions";
 import { wrapper } from "~/redux/store";
 import classes from "../styles/pages.module.css";
-import c from './watchcare.module.css'
-
-
+import c from "./watchcare.module.css";
 
 const AboutPage = ({ data, error }) => {
+       let watchCareList=[
+            {title : 'Battery Replacement', desc : 'Genuine Japanese and Swiss from trusted brands like Seizaiken and Renata', price:500, im:'watch-care-1.png'},
+            {title : 'Strap Replacement', desc : 'Leather, Stainless steel or Synthetic from official brands or third party manufacturers', price:500, im:'watch-care-2.png'},
+            {title : 'Glass Replacement', desc : 'Plastic glass, Mineral Crystal, Hardlex Crystal, Sapphire Crystal',price:500,im:'watch-care-3.png'},
+            {title : 'Servicing of movement', desc : 'Complete overhauling of watch machine with cleaning and oiling of each individual component',price:500, im:'watch-care-4.png'},
+            {title : 'Polishing & Buffing', desc : 'Scratch removal from case and watch bracelet and bring back the original shine', price:500, im:'watch-care-5.png'},
+            {title : 'Crown Replacement', desc : 'Genuine Crown/key replacement with stem',price:500, im:'watch-care-6.png'},
+            
+            ]
+    
+
   return (
     <>
       {error ? (
         <Error500 />
       ) : (
         <>
-          <HeadData title="About Us" />
+          <HeadData title="wacth Care" />
           
          
           {/*<div className="layout_top">
@@ -31,12 +43,63 @@ const AboutPage = ({ data, error }) => {
           
           
  <main className="wacthCarePage">
+ 
+ <section className={c.TexTopBanner}>
+<img src='/images/watch-care-banner.png' />
+ </section>
+ 
+ <section className="watchCareInfo  pt-5">
+    <h2 className="text-center">Our Watch Care</h2>
+    <div className="container">
+    <div className="row d-flex justify-content-center">
+    <div className="col-lg-8">
+    <p className={`normText  py-3 ${c.justifyContent}`}>We know that you enjoy taking care of your watches just as much as you relish wearing them. 
+      World of Watches takes pride in sharing this passion for caring for your watches
+      Our experts are enthused to cater to any repair or replacement you require, whether it be replacing a strap or rare parts.
+      We are always happy to help!
+      Just get in touch with us and we will be enthused to help you throughout the journey you share with your watch.</p>
+      </div>
+      </div>
+      </div>
+</section>
+
+		  	<section className={c.aboutgallery}>
+		  	<div className='container'>
+		  			<ul className={`mt-4 ${c.gridGallery}`}>
+		  			{
+		  			    watchCareList.map((x, i)=>{
+		  			        
+		  			        return(
+		  			        <>
+		  			        <li>
+        		  					<img src={`/images/${x.im}`} />
+        		  					<div className={c.captionText}>
+        		  							<h2>{x.title}</h2>
+        		  							<p className={c.tag}>{x.desc}</p>
+        		  						{/*	<div className={c.startingFrom}>Starting From</div>
+        		  							<div className={c.price}>{x.price}</div>*/}
+        		  							
+        		  						{/*	<div className={c.enq}>Enquire Now</div>*/}
+        		  					</div>
+		  				    </li>
+		  			        </>
+		  			        
+		  			        )
+		  			        
+		  			    })
+		  			}
+		  				
+		  				
+		  				
+		  			</ul>
+		  			</div>
+		  	</section>
 
   <section className="watchCare">
     <div className="container">
       <div className="row flex-row-reverse">
         <div className="col-xl-12 col-lg-8 col-md-8 col-sm-12">
-    <h1><span>Watch Care Guidelines</span></h1>
+    {/*<h1><span>Watch Care Guidelines</span></h1>*/}
     <ul className="grid-list">
       <li>
       <h2><img src="/images/cleaning.webp" /> <span>Cleaning</span></h2>

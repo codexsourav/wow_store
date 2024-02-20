@@ -1,6 +1,3 @@
-export default function Home1() {
-  return <></>;
-}
 
 const crypto = require('crypto');
 

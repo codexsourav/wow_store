@@ -164,7 +164,7 @@ let[mobScreen, setMobScreen] = useState('');
                           <div className="row">
                             <div className="col-xl-12 col-lg-12 col-md-12">
                               <div className="row">
-                                <div className="col-xl-8 col-lg-8 col-md-7">
+                                <div className="col-xl-5 col-lg-5 col-md-7">
                                   <CategoryMenuBrand data={navData} />
                                 </div>
                                 <div className="col-xl-4 col-lg-4 col-md-5">
@@ -184,6 +184,14 @@ let[mobScreen, setMobScreen] = useState('');
                                       </div>
                                   </div>
                                 </div>
+                                
+                                <div className="col-xl-3 col-lg-3 col-md-5 watchCareNav">
+                                <a href='/watch-care' className='px-0'><img src='/images/watch-care-menu.jpg' className='img-fluid' /></a>
+                                
+                                <div className='careNm'><a href='/watch-care'>Watch Care Guidelines</a></div>
+                                <div class="moredetails  pt-0"><a href="/watch-care"><span>Discover</span></a></div>
+                                </div>
+                              
                               </div>
                             </div>
                           </div>

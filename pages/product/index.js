@@ -7,9 +7,8 @@ import Error500 from "~/components/error/500";
 import { compareData, fetchData, setSettingsData } from "~/lib/clientFunctions";
 import galleryPageData from "~/lib/dataLoader/gallery";
 import { wrapper } from "~/redux/store";
-import classes from "~/styles/gallery.module.css";
-import ShortMenu from "~/components/Shop/Sidebar/ShortMenu";
-import Image from 'next/image'
+
+import Image from "next/image";
 
 const GlobalModal = dynamic(() => import("~/components/Ui/Modal/modal"));
 const Spinner = dynamic(() => import("~/components/Ui/Spinner"));
@@ -30,7 +29,7 @@ function GalleryPage({ data, error }) {
   const [sortedItemList, setSortedItemList] = useState(_items);
   const [loading, setLoading] = useState(false);
   const [productLength, setProductLength] = useState(data.product_length || 0);
-   const [categoryDtaa, setCategoryDtaa] = useState({});
+  const [categoryDtaa, setCategoryDtaa] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const [sortKey, setSortKey] = useState("db");
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -38,11 +37,9 @@ function GalleryPage({ data, error }) {
   const [selectedBrand, setSelectedBrand] = useState([]);
   const [selectedAttr, setSelectedAttr] = useState([]);
 
-
   const isInitialMount = useRef(true);
   //update filter
   async function updateFilteredProduct(props) {
-
     try {
       setLoading(true);
       let brandArr = "&";
@@ -54,15 +51,17 @@ function GalleryPage({ data, error }) {
       selectedAttr.forEach((el) => {
         flterData = flterData + `filter=${el}&`;
       });
-      const cat = `category=${selectedCategory.length > 0 ? selectedCategory : ""
-        }`;
-      const sub = `&subcategory=${selectedSubCategory.length > 0 ? selectedSubCategory : ""
-        }`;
-        
-        const url = `/api/home/singleCat?type=${selectedCategory}`;
+      const cat = `category=${
+        selectedCategory.length > 0 ? selectedCategory : ""
+      }`;
+      const sub = `&subcategory=${
+        selectedSubCategory.length > 0 ? selectedSubCategory : ""
+      }`;
+
+      const url = `/api/home/singleCat?type=${selectedCategory}`;
       const resp = await fetchData(url);
       setCategoryDtaa(resp.catego);
-      
+
       const prefix = `${cat}${sub}${brandArr}${flterData}`;
       const response = await fetchData(`/api/gallery?${prefix}`);
       _setProductList(response.product);
@@ -113,7 +112,7 @@ function GalleryPage({ data, error }) {
   //Load more items
   const moreProduct = async () => {
     await fetchData(
-      `/api/gallery/more-product?product_length=${_productList.length}`,
+      `/api/gallery/more-product?product_length=${_productList.length}`
     )
       .then((data) => {
         _setProductList([..._productList, ...data]);
@@ -135,14 +134,20 @@ function GalleryPage({ data, error }) {
       <HeadData />
 
       <section className="product-list-banner">
-    {categoryDtaa && (
-    categoryDtaa.icon && ( categoryDtaa.icon.map((e, i) => ( e.url ?
-      <Image src={e.url} width={1600} height={300} alt={e.name} />
-      : 
-      <img src="/images/Category Banners.jpg" width={1519} height={300} alt='product list' />
-      ))))} 
-      
-      
+        {categoryDtaa &&
+          categoryDtaa.icon &&
+          categoryDtaa.icon.map((e, i) =>
+            e.url ? (
+              <Image src={e.url} width={1600} height={300} alt={e.name} />
+            ) : (
+              <img
+                src="/images/Category Banners.jpg"
+                width={1519}
+                height={300}
+                alt="product list"
+              />
+            )
+          )}
       </section>
 
       <main className="productlistPage">
@@ -155,7 +160,7 @@ function GalleryPage({ data, error }) {
             ) : (
               <div className="row flex-row-reverse">
                 <div className="col-xl-10 col-lg12 col-md-12 col-sm-12">
-                  <div className='product-list-area'>
+                  <div className="product-list-area">
                     {/*
                     <div className="filterArea">
                       <div className="sellerFilter">
@@ -166,16 +171,16 @@ function GalleryPage({ data, error }) {
                     </div>
                     */}
 
-
                     {!loading && sortedItemList.length === 0 ? (
                       <div className="m-5 p-5">
                         <p className="text-center">No Product Found :(</p>
                       </div>
                     ) : !loading ? (
-
-                    
-                        <ProductList items={sortedItemList} data_length={productLength} loadMore={moreProduct} />
-         
+                      <ProductList
+                        items={sortedItemList}
+                        data_length={productLength}
+                        loadMore={moreProduct}
+                      />
                     ) : (
                       <div style={{ height: "80vh" }}>
                         <Spinner />
@@ -196,8 +201,6 @@ function GalleryPage({ data, error }) {
                     attr={data.attr}
                   />
                 </div>
-
-
               </div>
             )}
           </section>
